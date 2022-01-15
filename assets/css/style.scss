@@ -224,6 +224,32 @@ body {
 	}
 }
 
+.slider-arrows {
+	margin-top: 55px;
+	display: flex;
+	justify-content: flex-end;
+	&__arrow {
+		width: 25px;
+		height: 25px;
+		cursor: pointer;
+		svg {
+			width: 25px;
+			height: 25px;
+			fill: $bl;
+			transition: all .2s linear;
+		}
+		&_next {
+			transform: rotate(180deg);
+			margin-left: 15px;
+		}
+		&:hover {
+			svg {
+				fill: $blue;
+			}
+		}
+	}
+}
+
 /*============Header===========*/
 .header {
 	position: absolute;
@@ -668,7 +694,7 @@ body {
 	padding-top: 30px;
 	&__inner {
 		display: flex;
-		margin-top: 55px;
+		margin-top: 15px;
 	}
 	&__textbox {
 		padding-right: 50px;
@@ -1052,6 +1078,9 @@ body {
 }
 
 @media(max-width: 992px) {
+	.slider-arrows {
+		margin-top: 30px;
+	}
 	.advantages {
 		margin-top: 50px;
 		&__inner {

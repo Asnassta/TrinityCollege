@@ -64,6 +64,18 @@ $(document).ready(function() {
 });
  /*==========label===========*/
 
+
+ /*======Reviews__slider=============*/
+  $('.reviews__slider').slick({
+      infinite: true,
+      //fade: true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      prevArrow: $('.slider-arrows__arrow_prev'),
+      nextArrow: $('.slider-arrows__arrow_next'),
+  });
+  /*=============/reviews__slider==============*/
+
   
 
 	

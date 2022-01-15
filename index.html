@@ -4,9 +4,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no, user-scalable=no">
 	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<title>Trinity College</title>
 </head>
 <body>
+	<!--Sprite-->
+	<svg style="display: none;">
+		<symbol id="arrow-slider" viewBox="0 0 32 32">
+			<g><path d="M13,26a1,1,0,0,1-.71-.29l-9-9a1,1,0,0,1,0-1.42l9-9a1,1,0,1,1,1.42,1.42L5.41,16l8.3,8.29a1,1,0,0,1,0,1.42A1,1,0,0,1,13,26Z"/><path d="M28,17H4a1,1,0,0,1,0-2H28a1,1,0,0,1,0,2Z"/></g>
+		</symbol>
+	</svg>
 	<div class="wrapper">
 		<header class="header">
 			<div class="container">
@@ -269,28 +276,69 @@
 		<section class="reviews" id="reviews">
 			<div class="container">
 				<h2 class="title-section">Отзывы</h2>
-				<div class="reviews__inner">
-					<div class="reviews__textbox">
-						<div class="reviews-autor">
-							<div class="reviews-autor__photo">
-								<img src="assets/images/reviews-autor.png" alt="">
-							</div>
-							<div class="reviews-autor__info">
-								<div class="reviews-autor__name">Рената Кудоярова</div>
-								<div class="reviews-autor__country">Уфа, Россия</div>
-							</div>
-						</div>
-						<div class="reviews__text">
-							<p>“Мне очень нравится жить в Дублине. Больше всего я очарована природой Ирландии. Всё везде такое зеленое и прекрасное, куда бы я ни пошла. Мне нравятся ирландцы, потому что они приятные и дружелюбные.</p>
-							<p>Кроме того, я являюсь старостой своего класса в IFP. Я люблю помогать людям, руководить процессом, вести переговоры и посещать различные собрания.</p>
-							<p>Еще, конечно, сам Тринити-колледж в Дублине. Так как это старейший и лучший университет в Ирландии, мне просто не терпится поступить на первый курс и учиться на кампусе.”</p>
-						</div>
+				<div class="slider-arrows">
+					<div class="slider-arrows__arrow slider-arrows__arrow_prev">
+						<svg>
+							<use xlink:href="#arrow-slider"></use>
+						</svg>
 					</div>
-					<div class="reviews__videobox">
-						<div class="reviews__video">
-							<img src="assets/images/video-placeholder.png" alt="">
-						</div>
+					<div class="slider-arrows__arrow slider-arrows__arrow_next">
+						<svg>
+							<use xlink:href="#arrow-slider"></use>
+						</svg>
 					</div>
+				</div>
+				<div class="reviews__slider">
+					<div class="reviews__slide">
+						<div class="reviews__inner">
+							<div class="reviews__textbox">
+								<div class="reviews-autor">
+									<div class="reviews-autor__photo">
+										<img src="assets/images/reviews-autor.png" alt="">
+									</div>
+									<div class="reviews-autor__info">
+										<div class="reviews-autor__name">Рената Кудоярова</div>
+										<div class="reviews-autor__country">Уфа, Россия</div>
+									</div>
+								</div>
+								<div class="reviews__text">
+									<p>“Мне очень нравится жить в Дублине. Больше всего я очарована природой Ирландии. Всё везде такое зеленое и прекрасное, куда бы я ни пошла. Мне нравятся ирландцы, потому что они приятные и дружелюбные.</p>
+									<p>Кроме того, я являюсь старостой своего класса в IFP. Я люблю помогать людям, руководить процессом, вести переговоры и посещать различные собрания.</p>
+									<p>Еще, конечно, сам Тринити-колледж в Дублине. Так как это старейший и лучший университет в Ирландии, мне просто не терпится поступить на первый курс и учиться на кампусе.”</p>
+								</div>
+							</div>
+							<div class="reviews__videobox">
+								<div class="reviews__video">
+									<img src="assets/images/video-placeholder.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div><!--/reviews__slide-->
+					<div class="reviews__slide">
+						<div class="reviews__inner">
+							<div class="reviews__textbox">
+								<div class="reviews-autor">
+									<div class="reviews-autor__photo">
+										<img src="assets/images/reviews-autor.png" alt="">
+									</div>
+									<div class="reviews-autor__info">
+										<div class="reviews-autor__name">Рената Кудоярова</div>
+										<div class="reviews-autor__country">Уфа, Россия</div>
+									</div>
+								</div>
+								<div class="reviews__text">
+									<p>“Мне очень нравится жить в Дублине. Больше всего я очарована природой Ирландии. Всё везде такое зеленое и прекрасное, куда бы я ни пошла. Мне нравятся ирландцы, потому что они приятные и дружелюбные.</p>
+									<p>Кроме того, я являюсь старостой своего класса в IFP. Я люблю помогать людям, руководить процессом, вести переговоры и посещать различные собрания.</p>
+									<p>Еще, конечно, сам Тринити-колледж в Дублине. Так как это старейший и лучший университет в Ирландии, мне просто не терпится поступить на первый курс и учиться на кампусе.”</p>
+								</div>
+							</div>
+							<div class="reviews__videobox">
+								<div class="reviews__video">
+									<img src="assets/images/video-placeholder.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div><!--/reviews__slide-->
 				</div>
 			</div>
 		</section><!--/reviews-->
@@ -421,6 +469,7 @@
 	</div>
 
 	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	<script src="assets/js/script.js"></script>
 </body>
 </html>
